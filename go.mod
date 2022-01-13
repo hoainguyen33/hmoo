@@ -1,4 +1,4 @@
-module Go
+module github.com/hoainguyen33/Go
 
 go 1.13
 
