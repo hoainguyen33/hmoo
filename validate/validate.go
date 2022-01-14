@@ -49,12 +49,12 @@ func QueryFilter(query url.Values, filter map[string]string) bson.D {
 	return bson.D{bson.E("$match", props)}
 }
 
-// return nil or bsonD
-func QuerySort(query url.Values, sort []string) bson.D {
+// format sorter return nil or bsonD
+func QuerySort(query url.Values, sort []string, sorter map[string]int) bson.D {
 	props := bson.M{}
 	for _, k := range sort {
-		if query[k] != nil && sorter.Sorter[query[k][0]] != 0 {
-			props[k] = sorter.Sorter[query[k][0]]
+		if query[k] != nil && sorter[query[k][0]] != 0 {
+			props[k] = sorter[query[k][0]]
 		}
 	}
 	if len(props) == 0 {
