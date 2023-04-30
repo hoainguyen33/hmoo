@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hoainguyen33/Go/bson"
-	"github.com/hoainguyen33/Go/common/errors"
-	"github.com/hoainguyen33/Go/e2e"
+	"github.com/hoainguyen33/hmoo/bson"
+	"github.com/hoainguyen33/hmoo/common/errors"
+	"github.com/hoainguyen33/hmoo/e2e"
 )
 
 // format query []string to int

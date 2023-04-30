@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/hoainguyen33/Go/bson"
+	"github.com/hoainguyen33/hmoo/bson"
 
 	mbson "go.mongodb.org/mongo-driver/bson"
 )
