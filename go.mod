@@ -1,4 +1,4 @@
-module github.com/hoainguyen33/Go
+module github.com/hoainguyen33/hmoo
 
 go 1.13
 
